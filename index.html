@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>ConsultaCEP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-row">
+        <h1>ConsultaCEP</h1>
+        <form class="">
+          <p class="row">
+            <label for="">CEP</label>
+            <input
+              type="text"
+              name="cep"
+              id="cep"
+              onkeypress="$(this).mask('00000-000')"
+            />
+          </p>
+          <p class="row">
+            <label for="">Rua</label>
+            <input type="text" name="rua" id="rua" />
+          </p>
+          <p class="row">
+            <label for="">Bairo</label>
+            <input type="text" name="bairro" id="bairro" />
+          </p>
+          <p class="row">
+            <label for="">Cidade</label>
+            <input type="text" name="cidade" id="cidade" />
+          </p>
+          <p class="row">
+            <label for="">Estado</label>
+            <input type="text" name="estado" id="estado" />
+          </p>
+          <div id="results"></div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
