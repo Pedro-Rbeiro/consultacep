@@ -5,7 +5,6 @@ const bairro = document.getElementById("bairro");
 const cidade = document.getElementById("cidade");
 const estado = document.getElementById("estado");
 const resultados = document.getElementById("results");
-cep.value = "01001000";
 resultados.style = "display:none";
 cep.addEventListener("blur", function (e) {
   let cep = e.target.value;
