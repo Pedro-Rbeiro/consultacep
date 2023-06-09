@@ -20,6 +20,12 @@ h1 {
   font-weight: 200;
   cursor: pointer;
 }
+
+#info-results {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 5px 0;
+}
 input {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
@@ -57,4 +63,13 @@ p > label {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+#results-text {
+  color: #858585;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#results-text:hover {
+  color: #000;
 }
