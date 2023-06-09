@@ -22,7 +22,6 @@ function popularform(resposta) {
     return;
   }
 
-  console.log(resposta);
   rua.value = resposta.logradouro;
   bairro.value = resposta.bairro;
   cidade.value = resposta.localidade;
